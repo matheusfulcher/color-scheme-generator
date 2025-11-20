@@ -6,11 +6,26 @@
   <link rel="icon" type="image/svg+xml" href="/vite.svg" />
   <link rel="stylesheet" href="/src/style.css">
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>colorschemegenerator</title>
+  <title>Color Scheme Generator</title>
 </head>
 
 <body>
-  <div id="app"></div>
+
+  <main class="main">
+    <header class="header">
+      <input class="color-picker" value="#F55A5A" id="color-picker" type="color">
+      <select>
+        <option>Monochrome</option>
+        <option>Monochrome-dark</option>
+        <option>Monochrome-light</option>
+        <option>Analogic</option>
+        <option>Complement</option>
+        <option>Analogic-complement</option>
+        <option>Triad</option>
+      </select>
+      <button class="btn">Get color scheme</button>
+    </header>
+  </main>
   <script type="module" src="/src/main.js"></script>
 </body>
 

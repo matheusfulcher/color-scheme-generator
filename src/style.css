@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Inter, 'sans-serif';
+}
+
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 1200px;
+    height: 1000px;
+    border: 2px solid rgb(196, 196, 196);
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+    padding-top: 2rem;
+}
+
+
+select {
+    display: flex;
+    align-items: center;
+    font-weight: 400;
+    background-color: rgb(255, 255, 255);
+    padding-left: 1rem;
+    padding-right: 8rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    width: 500px;
+    height: 70px;
+    color: #111827;
+}
+
+select,
+::picker(select) {
+    appearance: base-select;
+    border-radius: 8px;
+    border-style: none;
+    border: 1px solid #D1D5DB;
+    box-shadow: 2px 2px 4px rgb(209, 209, 209);
+    font-size: 1.75rem;
+    padding-right: 8rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+option {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    padding: 0.5rem 0.5rem;
+    padding-left: 1rem;
+}
+
+option::checkmark {
+    display: none;
+}
+
+.btn {
+    padding: 0.75rem 1rem;
+    border-radius: 0.25rem;
+    border-style: none;
+    border: 2px solid #D1D5DB;
+    background-color: white;
+    color: #374151;
+    font-weight: 500;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+    font-size: 1rem;
+}
+
+.btn:hover {
+    background-color: #f1f1f1;
+
+}
+
+input {
+    width: 45px;
+    height: 38px;
+}
