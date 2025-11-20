@@ -14,7 +14,7 @@
   <main class="main">
     <header class="header">
       <input class="color-picker" value="#F55A5A" id="color-picker" type="color">
-      <select>
+      <select id="select">
         <option>Monochrome</option>
         <option>Monochrome-dark</option>
         <option>Monochrome-light</option>
@@ -23,8 +23,18 @@
         <option>Analogic-complement</option>
         <option>Triad</option>
       </select>
-      <button class="btn">Get color scheme</button>
+      <button id="btn" class="btn">Get color scheme</button>
     </header>
+    <div class="scheme" id="scheme">
+      <div class="scheme__colours" id="scheme__colours"></div>
+      <div class="scheme__hex" id="hex">
+        <span class="hex__colour" id="hex__colour">#F55A5A</span>
+        <span class="hex__colour" id="hex__colour">#F55A5A</span>
+        <span class="hex__colour" id="hex__colour">#F55A5A</span>
+        <span class="hex__colour" id="hex__colour">#F55A5A</span>
+        <span class="hex__colour" id="hex__colour">#F55A5A</span>
+      </div>
+    </div>
   </main>
   <script type="module" src="/src/main.js"></script>
 </body>
